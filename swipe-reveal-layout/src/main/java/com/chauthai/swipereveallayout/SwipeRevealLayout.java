@@ -691,7 +691,7 @@ public class SwipeRevealLayout extends ViewGroup {
             );
         }
 
-        mDragHelper = ViewDragHelper.create(this, 1.0f, mDragHelperCallback);
+        mDragHelper = ViewDragHelper.create(this, 0.8f, mDragHelperCallback);
         mDragHelper.setEdgeTrackingEnabled(ViewDragHelper.EDGE_ALL);
 
         mGestureDetector = new GestureDetectorCompat(context, mGestureListener);
